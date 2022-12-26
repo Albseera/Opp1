@@ -1,14 +1,69 @@
 import java.util.Objects;
 
 public class Car {
-    public String brand;
-    public String model;
-    public String  country;
-    public String color;
-    public Integer year;
-    public Double engineVolume;
+    private String brand;
+    private String model;
+    private String  country;
+    private String color;
+    private Integer year;
+    private Double engineVolume;
 
+    public Car(String brand, String model, String country, String color, Integer year, Double engineVolume) {
+        this.brand = brand;
+        this.model = model;
+        this.country = country;
+        this.color = color;
+        this.year = year;
+        this.engineVolume = engineVolume;
+    }
 
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public Integer getYear() {
+        return year;
+    }
+
+    public void setYear(Integer year) {
+        this.year = year;
+    }
+
+    public Double getEngineVolume() {
+        return engineVolume;
+    }
+
+    public void setEngineVolume(Double engineVolume) {
+        this.engineVolume = engineVolume;
+    }
 
     @Override
     public String toString() {
